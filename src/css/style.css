@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: divlit;
+    src: url("/fonts/divlit.ttf");
+}
+
+@keyframes op{
+    from {opacity: 1;}
+    to {opacity: .3;}
+}
+
+body{
+    background-color: black;
+    color: white;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    outline: none;
+}
+
+footer{
+    position: fixed;
+    bottom: 2.5%;
+    left: 46%;
+}
+
+#myVideo{
+    position: fixed;
+    right: 0%;
+    bottom: 0%;
+    min-width: 100%;
+    min-height: 100%;
+    opacity: .65;
+    z-index: -1;
+}
+
+.shirt{
+    width: 20%;
+    height: 20%;
+    text-align: left;
+}
+
+.ken{
+    font-size: 15vh;
+    font-family: divlit;
+    color: chartreuse;
+    margin-bottom: -3%;
+    opacity: .6;
+}
+
+.carson{
+    font-size: 15vh;
+    font-family: divlit;
+    color: chartreuse;
+    margin-top: -3%;
+    opacity: .6;
+}
+
+.container{
+    margin-left: 1em;
+}
+
+.nav{
+    color: chartreuse;
+    font-size: 5.5vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav > ul > a{
+    color: inherit;
+}
+
+.nav > ul > a > li{
+    opacity: .6;
+}
+
+.nav > ul > a:hover{
+    color: inherit;
+    font-size: 6vh;
+    animation-name: op;
+    animation-duration: .5s;
+    animation-iteration-count: infinite;
+}
+
+.social img{
+    opacity: .55;
+    margin: 0 .25rem;
+}
+
+@media (min-aspect-ratio: 16/9){
+    #myVideo{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9){
+    #myVideo{
+        width: auto;
+        height: 100%;
+    }
+}
