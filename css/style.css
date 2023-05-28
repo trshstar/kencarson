@@ -13,6 +13,11 @@
     to {opacity: .3;}
 }
 
+@keyframes text{
+    from {color: chartreuse;}
+    to {color: black;}
+}
+
 body{
     background-color: black;
     color: white;
@@ -29,6 +34,7 @@ a{
 
 footer{
     position: fixed;
+    display: flex;
     bottom: 2.5%;
     left: 46%;
 }
@@ -95,6 +101,19 @@ footer{
 .social img{
     opacity: .55;
     margin: 0 .25rem;
+}
+
+.status{
+    position: fixed;
+    right: 2%;
+    bottom: 2%;
+    font-size: 1.25rem;
+    color: chartreuse;
+    font-family: arial;
+    text-align: center;
+    animation-name: text;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
 }
 
 @media (min-aspect-ratio: 16/9){
