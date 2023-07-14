@@ -1,6 +1,5 @@
 # kencarson
-a website for ken
+a website for ken, shoutout to znn2x for the sickk edit https://www.youtube.com/watch?v=kKF5kjn2zQc
 
-https://www.youtube.com/watch?v=jao-W5tJkYo
 
                             by XCALIBUR STUDIO
