@@ -119,6 +119,21 @@ footer{
     opacity: 1;
 }
 
+.container-music{
+    display: flex;
+    margin: 1.5em;
+    flex-direction: column;
+    align-items: center;
+}
+
+.songs > iframe{
+    padding: 1rem;
+}
+
+.tapes > iframe{
+    padding: 1rem;
+}
+
 /*.item{
     border: 2px solid chartreuse;
     margin: 1rem;
