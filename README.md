@@ -6,5 +6,3 @@ https://trshstar.github.io/kencarson/index.html                           by XCA
 
 https://www.instagram.com/xcalibur.studio/
  
-
-https://www.twitter.com/xcalibur3d
