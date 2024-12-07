@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     box-sizing: border-box;
 }
@@ -8,48 +8,56 @@
     src: url("../fonts/divlit.ttf");
 }
 
-@keyframes op{
-    from {opacity: 1;}
-    to {opacity: .3;}
+@keyframes op {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0.3;
+    }
 }
 
-@keyframes text{
-    from {color: chartreuse;}
-    to {color: black;}
+@keyframes text {
+    from {
+        color: chartreuse;
+    }
+
+    to {
+        color: black;
+    }
 }
 
-body{
+body {
     display: flex;
     justify-content: flex-start;
     background-color: black;
     color: chartreuse;
+    font-size: 16px; /* Default font size */
 }
 
-ul{
+ul {
     list-style: none;
 }
 
-a{
+a {
     text-decoration: none;
     outline: none;
 }
 
-
-/*make opacity change on hover*/
-iframe
-{
-    opacity: .6;
+iframe {
+    opacity: 0.6;
     padding: 1rem 0rem;
 }
 
-footer{
+footer {
     position: fixed;
     display: flex;
     bottom: 2.5%;
     left: 1%;
 }
 
-button{
+button {
     margin: 2.5rem;
     padding: 1rem;
     background-color: #7fff00;
@@ -57,63 +65,54 @@ button{
     opacity: 0.0;
 }
 
-#myVideo1{
+#myVideo1 {
     position: fixed;
     left: 30%;
     top: 10%;
     width: 960px;
     height: 720px;
     display: none;
-    opacity: .6;
+    opacity: 0.6;
     z-index: -1;
 }
 
-#myVideo{
+#myVideo {
     position: fixed;
-    right: 0%;
-    bottom: 0%;
+    right: 0;
+    bottom: 0;
     min-width: 100%;
     min-height: 100%;
-    opacity: .5;
+    opacity: 0.5;
     z-index: -5;
 }
 
-#kencarson{
+#kencarson {
     display: inline-block;
 }
 
-#auto{
+#auto {
     display: none;
 }
 
-
-.shirt{
+.shirt {
     width: 20%;
     height: 20%;
     text-align: left;
 }
 
-.ken{
+.ken, .carson {
     font-size: 15vh;
     font-family: divlit;
     color: #7fff00;
-    line-height: .75;
-    opacity: .5;
+    line-height: 0.75;
+    opacity: 0.5;
 }
 
-.carson{
-    font-size: 15vh;
-    font-family: divlit;
-    color: #7fff00;
-    line-height: .75;
-    opacity: .5;
-}
-
-.container{
+.container {
     margin-left: 1em;
 }
 
-.nav{
+.nav {
     display: flex;
     flex-wrap: wrap;
     color: chartreuse;
@@ -121,23 +120,23 @@ button{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.nav > ul > a{
+.nav > ul > a {
     color: inherit;
 }
 
-.nav > ul > a > li{
-    opacity: .5;
+.nav > ul > a > li {
+    opacity: 0.5;
 }
 
-.nav > ul > a:hover{
+.nav > ul > a:hover {
     color: inherit;
     font-size: 6vh;
     animation-name: op;
-    animation-duration: .5s;
+    animation-duration: 0.5s;
     animation-iteration-count: infinite;
 }
 
-.gallery{
+.gallery {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -147,61 +146,59 @@ button{
     text-decoration: none;
     font-family: arial;
     font-size: 1.5rem;
-    font: arial;
     text-align: center;
     line-height: 125%;
-    opacity: .7;
+    opacity: 0.7;
     border: 5px solid chartreuse;
     padding: 2.5rem 10rem;
     padding-bottom: 7.5rem;
-
 }
 
-.items{
+.items {
     display: flex;
     flex-direction: row;
 }
 
-.container-music{
+.container-music {
     display: flex;
     margin: 1.5em;
     flex-direction: row;
     align-items: center;
 }
 
-.container-tweets{
+.container-tweets {
     padding: 2.5rem 5rem;
     padding-left: 5rem;
 }
 
-.container-ig{
+.container-ig {
     padding: 2.5rem 1rem;
 }
 
-.songs , .songs1 {
+.songs, .songs1 {
     padding: 1rem;
 }
 
-.tapes{
+.tapes {
     padding: 1rem;
 }
-.item{
-    /*border: 2px solid chartreuse;*/
+
+.item {
     margin: 1rem;
 }
 
-.item:hover{
+.item:hover {
     animation-name: op;
     animation-duration: 2s;
-    opacity: .3;
+    opacity: 0.3;
 }
 
-.social img{
-    opacity: .8;
+.social img {
+    opacity: 0.8;
     margin: 0.25rem;
 }
 
-.status{
+.status {
     position: fixed;
     right: 2%;
     bottom: 2%;
@@ -214,15 +211,105 @@ button{
     animation-iteration-count: infinite;
 }
 
-@media (min-aspect-ratio: 16/9){
-    #myVideo{
+/* Responsive Design - Mobile and Tablet */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    .ken, .carson {
+        font-size: 10vh;
+    }
+
+    .nav {
+        font-size: 4vh;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav > ul > a > li {
+        opacity: 1;
+        font-size: 4vh;
+    }
+
+    .gallery {
+        margin-left: 5rem;
+        padding: 2rem;
+        margin-top: 2rem;
+    }
+
+    .container {
+        margin-left: 0;
+    }
+
+    footer {
+        bottom: 1%;
+        left: 1%;
+        flex-direction: column;
+    }
+
+    footer .social {
+        margin-bottom: 1rem;
+    }
+
+    #myVideo {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -10;
+        opacity: 0.7;
+    }
+}
+
+/* Responsive Design - Large Screens (Desktop) */
+@media screen and (min-width: 1024px) {
+    body {
+        font-size: 18px;
+    }
+
+    .ken, .carson {
+        font-size: 20vh;
+    }
+
+    .nav {
+        font-size: 5.5vh;
+    }
+
+    .gallery {
+        margin-left: 17.5rem;
+        margin-top: 5rem;
+        padding: 2.5rem 10rem;
+        padding-bottom: 7.5rem;
+    }
+
+    footer {
+        bottom: 2.5%;
+        left: 1%;
+        flex-direction: row;
+    }
+
+    footer .social {
+        margin-right: 1rem;
+    }
+
+    #myVideo {
+        min-height: 100%;
+        min-width: 100%;
+    }
+}
+
+/* Aspect Ratio Adjustments */
+@media (min-aspect-ratio: 16/9) {
+    #myVideo {
         width: 100%;
         height: auto;
     }
 }
 
-@media (max-aspect-ratio: 16/9){
-    #myVideo{
+@media (max-aspect-ratio: 16/9) {
+    #myVideo {
         width: auto;
         height: 100%;
     }
